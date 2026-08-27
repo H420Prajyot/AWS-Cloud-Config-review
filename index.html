@@ -82,7 +82,7 @@ textarea{min-height:130px;resize:vertical}.notes-label{margin-top:12px!important
 <div class="stats">
 <span class="stat">72 Excel test cases</span>
 <span class="stat">11 security domains</span>
-<span class="stat">11 PDF execution sections</span>
+<span class="stat">11 execution sections</span>
 <span class="stat">AWS CLI + ScoutSuite + Prowler</span>
 </div>
 </section>
@@ -98,7 +98,7 @@ textarea{min-height:130px;resize:vertical}.notes-label{margin-top:12px!important
 </section>
 
 <section class="guide" id="execution-guide">
-<h2>📘 PDF Execution Guide</h2>
+<h2>📘 Execution Guide</h2>
 <p class="guide-intro">The complete source-derived execution guide is included here so the HTML can be used as a standalone assessment runbook, not just as a list of test cases.</p>
 <section class="guide-section" id="guide-1-objective"><h3>1. Objective</h3><p>This document provides the step-by-step procedure to configure AWS CLI access, validate permissions, execute automated security assessment tools, and perform manual security checks across two AWS accounts provided by the client.</p><p>The assessment will cover AWS services such as:</p><ul><li>Identity and Access Management (IAM)</li><li>Simple Storage Service (S3)</li><li>Elastic Compute Cloud (EC2)</li><li>Virtual Private Cloud (VPC)</li><li>Relational Database Service (RDS)</li><li>Lambda</li><li>CloudTrail</li><li>CloudWatch</li><li>GuardDuty</li><li>Security Hub</li><li>AWS configuration and security posture checks</li></ul></section><section class="guide-section" id="guide-2-prerequisites"><h3>2. Prerequisites</h3><p>The client has provided:</p><ul><li>AWS Access Key ID</li><li>AWS Secret Access Key</li><li>Credentials for Account 1 and Account 2</li></ul><p>Required tools:</p><div class='table-wrap'><table><thead><tr><th>Tool</th><th>Purpose</th></tr></thead><tbody><tr><td>AWS CLI</td><td>AWS account connectivity and manual validation</td></tr><tr><td>ScoutSuite</td><td>AWS security posture assessment</td></tr><tr><td>Prowler</td><td>CIS/NIST/ISO compliance and security checks</td></tr></tbody></table></div></section><section class="guide-section" id="guide-3-configure-aws-cli-profiles"><h3>3. Configure AWS CLI Profiles</h3><h4>3.1 Configure Account 1</h4><p>Execute the command and provide the Account 1 credentials.</p><pre>aws configure --profile client-account1</pre><pre>AWS Access Key ID: &lt;Paste Account 1 Access Key&gt;
 AWS Secret Access Key: &lt;Paste Account 1 Secret Key&gt;
